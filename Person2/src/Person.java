@@ -1,11 +1,12 @@
 
 public class Person {
-
+	//インスタンスフィールド（記入用紙）
 	public String name=null;
 	public int age=0;
 	
-	public Person(){}
+	public Person(){}//指定しないときは不要
 	
+	//コンストラクタ（型 引数）
 	public Person(String name, int age){
 		this.name=name;
 		this.age=age;

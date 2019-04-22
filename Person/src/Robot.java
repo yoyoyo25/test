@@ -1,8 +1,9 @@
 
 public class Robot {
-
+	//インスタンスフィールド（記入用紙）
 	public String name=null;
 	
+	//インスタンスメソッド→mainで呼出
 	public void talk(){
 		System.out.println(this.name+"が話す");
 	}

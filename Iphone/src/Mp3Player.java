@@ -1,6 +1,7 @@
 
 public class Mp3Player {
-
+	
+	//インスタンスメソッド
 	public void play(){
 		System.out.println("再生");
 	}

@@ -2,16 +2,22 @@
 public class Test {
 
 	public static void main(String[] args) {
-		Person taro=new Person();
+		
+		Person taro=new Person();//newでインスタンス化
+		
+		//値をセット
 		taro.name="山田太郎";
 		taro.age=20;
 		taro.phoneNumber="090-123-456";
 		taro.address="東京";
 		
+		//値を取得
 		System.out.println(taro.name);
 		System.out.println(taro.age);
 		System.out.println(taro.phoneNumber);
 		System.out.println(taro.address);
+		
+		//メソッド呼出
 		taro.talk();
 		taro.walk();
 		System.out.println("---------------------------");

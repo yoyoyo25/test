@@ -2,8 +2,10 @@
 public class Iphone {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		//インスタンス化→変数iphoneに代入（型=クラス名）
 		SmartPhone iphone=new SmartPhone();
+		
+		//メソッド呼出（変数に格納されたメソッド）
 		iphone.play();
 		iphone.stop();
 		iphone.next();

@@ -2,7 +2,7 @@
 public class Test {
 
 	public static void main(String[] args) {
-		
+		//今までと同じ：インスタンス化→値セット
 		Person taro=new Person();
 		taro.name="taro";
 		taro.age=18;
@@ -11,7 +11,8 @@ public class Test {
 		System.out.println(taro.age);
 		System.out.println("--------------");
 		
-		Person jiro=new Person("jiro",20);
+		//Personでコンストラクタ使用
+		Person jiro=new Person("jiro",20);//引数の型一致
 		System.out.println(jiro.name);
 		System.out.println(jiro.age);
 		System.out.println("--------------");
