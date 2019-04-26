@@ -19,14 +19,15 @@ public class DBConnector {
 		Connection con=null;//初期化
 
 		//try～catch：例外処理構文
-		try{
+		try{ //ドライバーをload,使える状態にする
 			Class.forName(driverName);
 			con=DriverManager.getConnection(url,user,password);
 		}catch(ClassNotFoundException e){
-			e.printStackTrace();
+			e.printStackTrace();//catchでエラー受取、printStackTraceでエラーに至る履歴を表示
 		}catch(SQLException e){
 			e.printStackTrace();
-		}
+		}//↑エラーは2種類（クラスが見つからない、データベース処理関係）
+
 		return con;
 	}
 
