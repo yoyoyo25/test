@@ -32,7 +32,6 @@ public class LoginAction extends ActionSupport{
 				ret=SUCCESS;
 			}
 		}
-	//ret(ERROR or SUCCESS)を返す
 	return ret;
 	}
 

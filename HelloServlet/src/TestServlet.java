@@ -14,6 +14,7 @@ public class TestServlet extends HttpServlet {
         super();
     }
 
+    //index.jspでGETリクエスト
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
@@ -27,7 +28,7 @@ public class TestServlet extends HttpServlet {
 
 		out.println("<html><head></head><body><br>"+username+"<br>"+password+"</body></html>");
 	}
-
+	//index.jspでPOSTリクエスト
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
