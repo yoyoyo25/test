@@ -5,15 +5,14 @@
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-	<!-- Struts2の挙動を制御する設定 -->
+
 	<constant name="struts.devMove" value="true" />
 
-	<!-- このpjで使うActionファイルが保存されているパッケージを宣言 -->
-	<package name="com.internousdev.login.action" extends="struts-default">
+		<package name="com.internousdev.login.action" extends="struts-default">
 
-		<!-- 呼び出されるファイル、クラス、メソッドを宣言 -->
+
 		<action name="LoginAction" class="com.internousdev.login.action.LoginAction" method="execute">
-			<!-- execute()メソッドから返ってきた値により次に遷移するjspファイルを振分け -->
+
 			<result name="success">loginSuccess.jsp</result>
 			<result name="error">loginError.jsp</result>
 		</action>
